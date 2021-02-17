@@ -74,7 +74,7 @@
   }
   
   p {
-    color: black;
+    color: red;
     max-width: 1000px;
     margin: 10px auto;
     padding: 10px 50px;
@@ -118,11 +118,11 @@
     max-width: 300px;
     margin: 10px auto;
     padding: 10px 20px;
-    background: silver;
+    background: blue;
     border-radius: 15px;
     margin-bottom: 50px;
     border: solid;
-    border-color: teal;
+    border-color: red;
   }
   
     /*-------------------------------------Buttons Index & Become a Platypus pages----------------------*/
@@ -130,15 +130,15 @@
 
     .otherButtons {
       padding: 19px 39px 18px 39px;
-      color: white;
-      background-color: teal;
+      color: red;
+      background-color: silver;
       font-size: 18px;
       text-align: center;
       font-style: normal;
       border-radius: 5px;
       width: 100%;
       max-width: 300px;
-      border: 1px solid black;
+      border: 1px solid red;
       border-width: 1px 1px 3px;
       box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
       margin-bottom: 10px;
@@ -155,7 +155,7 @@
   select {
     background: white;
     border: solid;
-    border-color: teal;
+    border-color: red;
     font-size: 16px;
     height: auto;
     margin: 0;
@@ -199,7 +199,7 @@
     /*---------------------------signup form----------------------*/
     @media screen and (min-width: 500px) {
     .signup {
-      background-color: silver;
+      background-color: blue;
       color: black;
       max-width: 500px;
     }
