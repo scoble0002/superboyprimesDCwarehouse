@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="css/normalize.css">
+          <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+          <link rel="stylesheet" href="css/main.css">
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="main.jss"></script>
+  </head>
+  <header>
+          <div class="platypusHeader";><a href="default.asp"><img src="images\platypus-swimming.webp" alt="platypusImage" style="width:100%;height:100%;"></a></div>
+          <nav class="navbar navbar-expand-md bg-dark navbar-dark"><a class="navbar-brand" href="#">Platypus Film Institute</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="pfilist.html">PFI 100</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About The PFI</a></li>
+                <li class="nav-item"><a class="nav-link" href="signup.html">Become a Platypus</a></li>    
+              </ul>
+            </div>  
+          </nav>
+  </header>   
+   <h1> Become a Platypus It's Free! </h1>
+
+  <form class="signup" name="RegForm"  
+        onsubmit="return formValidation()" method="post"> 
+      <p>Platypus Name <input id="platypusName" type="text" 
+                      size="65" name="Name" value=""/></p> 
+    
+      <p>Favorite Movie <input type="text" 
+                         size="65" name="Favorite" /></p> 
+    
+      <p>E-mail Address <input type="text" 
+                             size="65" name="EMail" /></p> 
+    
+      <p>Password <input type="text" 
+                          size="65" name="Password" /></p> 
+    
+      <p>Confirm Password <input type="text" 
+                           size="65" name="ConfirmPassword" /></p> 
+
+         <p> <input class="otherButtons" type="submit" 
+                 value="Become a Platypus" name="Submit" /> 
+      </p> 
+
+      <style>
+
+
+      </style>
+  </form> 
+  </body>
+  <footer class="footer">
+    &#169 2020 PFI Media &nbsp;
+  </footer>
+</html>

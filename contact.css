@@ -1,0 +1,140 @@
+ 
+  h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(48, 44, 44);
+    color: white;
+    text-align: right;
+  } 
+ 
+ /*contact page icons*/
+ .fa {
+  padding: 20px;
+  font-size: 3000px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+
+.fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+            
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  h2 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: white;
+}
+
+
+
+/* Media Queries  */
+
+/* small devices */
+@media only screen and (max-width: 300px) {
+    h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    max-width: 100px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 8px;
+    font-size: 5px;
+    }
+}
+
+
+
+
+/* -------------------------------------medium devices  */
+
+@media only screen and (min-width: 900px) {
+    h1 {
+        margin: 0 0 30px 0;
+        text-align: center;
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background: white;
+        border-radius: 8px;
+        font-size: 10px;
+        color: black;
+    }
+    }
+    
+@media only screen and (min-width: 900px) {
+        h2 {
+            margin: 0 0 30px 0;
+            text-align: center;
+            max-width: 100%;
+            margin: 10px auto;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: white;
+    }
+}
+
+
+/*---------------------------------------- large devices  */
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        margin: 0 0 30px 0;
+        text-align: center;
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background: white;
+        border-radius: 8px;
+        font-size: 10px;
+        color: black;
+    }
+    }
+    
+@media only screen and (min-width: 1200px) {
+        h2 {
+            margin: 0 0 30px 0;
+            text-align: center;
+            max-width: 100%;
+            margin: 10px auto;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: white;
+    }
+}
+
