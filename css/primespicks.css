@@ -128,7 +128,7 @@ overflow: hidden;
     
     .btn.active {
       background-color: silver;      
-      color: teal;
+      color: red;
     }
     
     .btnContainer {

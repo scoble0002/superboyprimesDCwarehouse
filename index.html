@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="stylesheet" href="css/primespicks.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -30,30 +33,30 @@
     </nav>
   </header>  
 
-<body>
-
-  <div id="title">
-  <h2>Puzzle</h2>
-</div>
-
-
-<p>Image</p>
-<img id="compositeSuperman" width="480px" height="480px" src='https://images.wallpapersden.com/image/download/batman-detective-comics-dc-comics_ZmVoZ2eUmZqaraWkpJRpbWWtaW1l.jpg' alt="compositeSuperman">
-
-
-<div id="slider">
-  <form>
-    <label>Easy</label>
-    <input type="range" id="scale" value="4" min="3" max="5" step="1">
-    <label>Hard</label>
-  </form>
-  <br>
-</div>
-
-<div id="main" class="main">
-  <canvas id="puzzle" width="480px" height="480px">
-  </canvas>
-</div>
+  <body>
+    <div class="row">
+       <div class="column">
+        <p>Image</p>
+        <img id="compositeSuperman" width="480px" height="480px" src='https://images.wallpapersden.com/image/download/batman-detective-comics-dc-comics_ZmVoZ2eUmZqaraWkpJRpbWWtaW1l.jpg' alt="compositeSuperman">
+       </div>
+       <div class="column">
+        <div id="slider">
+          <form>
+            <label>Easy</label>
+            <input type="range" id="scale" value="4" min="3" max="5" step="1">
+            <label>Hard</label>
+          </form>
+          <br>
+        </div>
+        
+        <div id="main" class="main">
+          <canvas id="puzzle" width="480px" height="480px">
+          </canvas>
+        </div>
+ </div>
+       </div>
+    </div>
+   </body>
 
 
 
