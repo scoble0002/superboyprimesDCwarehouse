@@ -5,7 +5,7 @@
         let context = document.getElementById('puzzle').getContext('2d');
         
         let img = new Image();
-        img.src = 'https://images.wallpapersden.com/image/download/batman-detective-comics-dc-comics_ZmVoZ2eUmZqaraWkpJRpbWWtaW1l.jpg';
+        img.src = 'images\allstarSuperman.jpg';
         img.addEventListener('load', drawTiles, false);
         
         let boardSize = document.getElementById('puzzle').width;

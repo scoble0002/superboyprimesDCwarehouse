@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/primespicks.css">
+    <link rel="stylesheet" href="css/main.css">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascript\main.js"></script>
+    <script src="javascript\randomImage.js"></script>
+  </head>
+  <header>
+    <div class="platypusHeader";><a href="default.asp"><img src="images\Superboy-Prime-Death-Metal-fight.jpg" alt="Superboy-Prime-Death-Metal-fight" style="width:25%;height:25%;"></a></div>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">Superboy Prime's DC Warehouse</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="main.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="puzzle.html">Puzzle</a></li>
+          <li class="nav-item"><a class="nav-link" href="primespicks.html">Prime's Picks</a></li>
+          <li class="nav-item"><a class="nav-link" href="signup.html">Become a Member</a></li>   
+        </ul>
+        <button onclick="myFunction()">Toggle dark mode</button>   
+      </div>  
+    </nav>
+  </header>  
+
+  <body  onload="randomImage()">
+
+  
+    <div class="row">
+       <div class="column">
+        <h1>Puzzle Image </h1>
+        <p><a href="#" onclick="randomImage()"><img id="myimage" /></a>
+            </p>
+        <p>Click image (or refresh the page) to get a new image</p>
+       </div>
+
+       <div class="column"> 
+        <div id="main" class="main">
+          <h1>Puzzle</h1>
+          <canvas id="puzzle" width="480px" height="480px">
+          </canvas>
+         </div>
+   
+         <div id="slider">
+          <form>
+            <label>Easy</label>
+            <input type="range" id="scale" value="4" min="2" max="7" step="1">
+            <label>Hard</label>
+          </form>
+          <br>
+        </div>
+       </div>
+
+       <script> 
+         
+        //---------------image on canvas---------------//
+        
+        let context = document.getElementById('puzzle').getContext('2d');
+        
+        let img = new Image();
+        img.src = 'https://images.wallpapersden.com/image/download/batman-detective-comics-dc-comics_ZmVoZ2eUmZqaraWkpJRpbWWtaW1l.jpg';
+        img.addEventListener('load', drawTiles, false);
+        
+        let boardSize = document.getElementById('puzzle').width;
+        let tileCount = document.getElementById('scale').value;
+        
+      //------calculates tile size from canvas and range input---//
+      
+        let tileSize = boardSize / tileCount;
+        
+        let tileLocation = new Object;
+        tileLocation.x = 0;
+        tileLocation.y = 0;
+        
+        let tileEmpty = new Object;
+        tileEmpty.x = 0;
+        tileEmpty.y = 0;
+        
+        let solved = false;
+        
+      //-------creates puzzle-------//
+      
+        let boardParts;
+        setBoard();
+        
+        //---------------difficulty---------------//
+        
+        document.getElementById('scale').onchange = function() {
+          tileCount = this.value;
+          tileSize = boardSize / tileCount;
+          setBoard();
+          drawTiles();
+        };
+        
+        document.getElementById('puzzle').onclick = function(e) {
+          tileLocation.x = Math.floor((e.pageX - this.offsetLeft) / tileSize);
+          tileLocation.y = Math.floor((e.pageY - this.offsetTop) / tileSize);
+          if (distance(tileLocation.x, tileLocation.y, tileEmpty.x, tileEmpty.y) == 1) {
+            slideTile(tileEmpty, tileLocation);
+            drawTiles();
+          }
+          if (solved) {
+            setTimeout(function() {alert("Awesome Job!");}, 500);
+          }
+        };
+        
+      
+        //-------uses arrays to create x y coordinates to position tiles-------//
+      
+        function setBoard() {
+          boardParts = new Array(tileCount);
+          for (let i = 0; i < tileCount; ++i) {
+            boardParts[i] = new Array(tileCount);
+            for (let j = 0; j < tileCount; ++j) {
+              boardParts[i][j] = new Object;
+              boardParts[i][j].x = (tileCount - 1) - i;
+              boardParts[i][j].y = (tileCount - 1) - j;
+            }
+          }
+          tileEmpty.x = boardParts[tileCount - 1][tileCount - 1].x;
+          tileEmpty.y = boardParts[tileCount - 1][tileCount - 1].y;
+          solved = false;
+        }
+        
+        function drawTiles() {
+          context.clearRect ( 0 , 0 , boardSize , boardSize );
+          for (let i = 0; i < tileCount; ++i) {
+            for (let j = 0; j < tileCount; ++j) {
+              let x = boardParts[i][j].x;
+              let y = boardParts[i][j].y;
+              if(i != tileEmpty.x || j != tileEmpty.y || solved == true) {
+                context.drawImage(img, x * tileSize, y * tileSize, tileSize, tileSize,
+                    i * tileSize, j * tileSize, tileSize, tileSize);
+              }
+            }
+          }
+        }
+        
+        function distance(x1, y1, x2, y2) {
+          return Math.abs(x1 - x2) + Math.abs(y1 - y2);
+        }
+        
+      //---------moves tiles---------//
+      
+        function slideTile(toLoc, fromLoc) {
+          if (!solved) {
+            boardParts[toLoc.x][toLoc.y].x = boardParts[fromLoc.x][fromLoc.y].x;
+            boardParts[toLoc.x][toLoc.y].y = boardParts[fromLoc.x][fromLoc.y].y;
+            boardParts[fromLoc.x][fromLoc.y].x = tileCount - 1;
+            boardParts[fromLoc.x][fromLoc.y].y = tileCount - 1;
+            toLoc.x = fromLoc.x;
+            toLoc.y = fromLoc.y;
+            checkSolved();
+          }
+        }
+        
+      //--------checks for solve----------//
+      
+        function checkSolved() {
+          let flag = true;
+          for (let i = 0; i < tileCount; ++i) {
+            for (let j = 0; j < tileCount; ++j) {
+              if (boardParts[i][j].x != i || boardParts[i][j].y != j) {
+                flag = false;
+              }
+            }
+          }
+          solved = flag;
+        }
+        </script>
+
+   </body>
+
+  <footer class="footer">
+    &#169 2021 SBP Media &nbsp;
+  </footer>
+  </html>
