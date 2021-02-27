@@ -1,3 +1,7 @@
+
+
+//----------------dark mode------------------//
+
 function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
@@ -9,16 +13,16 @@ function myFunction() {
 //---------------random button---------------//
 
             
-function findMovie() {
+function findQoute() {
   if (question.value == "Superboy Prime") {
-    let Movie = ["Awesome!", ,];
-    let random = Math.floor(Math.random() * (Movie.length - 1));
-    document.getElementById("randomMovie").setAttribute("value", Movie[random]);
+    let Qoute = ["Awesome!", "Great choice", ,];
+    let random = Math.floor(Math.random() * (Qoute.length - 1));
+    document.getElementById("randomQoute").setAttribute("value", Qoute[random]);
   }
   if (question.value != "Superboy Prime") {
-    let Movie = ["Wrong answer", "Weaklings like other weaklings", "Why do I even bother with you people?", "THAT GUY?", "REALLY?", "I don't even know who that is", "Didn't I beat him up?", ,];
-    let random = Math.floor(Math.random() * (Movie.length - 1));
-    document.getElementById("randomMovie").setAttribute("value", Movie[random]);
+    let Qoute = ["Wrong answer", "Why do I even bother with you people?", "THAT GUY?", "REALLY?", "I don't even know who that is", "Didn't I beat him up?", ,];
+    let random = Math.floor(Math.random() * (Qoute.length - 1));
+    document.getElementById("randomQoute").setAttribute("value", Qoute[random]);
 }
 }
 

@@ -6,10 +6,10 @@
           <link rel="stylesheet" href="css/normalize.css">
           <link rel="stylesheet" href="css/main.css">
           <link rel="stylesheet" href="css/index.css">
+   
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">       
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
              
 </head>
 <header>
@@ -21,8 +21,7 @@
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="main.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="puzzle.html">Puzzle</a></li>
-        <li class="nav-item"><a class="nav-link" href="primespicks.html">Prime's Picks</a></li>
-        <li class="nav-item"><a class="nav-link" href="signup.html">Become a Member</a></li>   
+        <li class="nav-item"><a class="nav-link" href="primespicks.html">Prime's Picks</a></li> 
       </ul>
       <button onclick="myFunction()">Toggle dark mode</button>   
     </div>  
@@ -32,33 +31,33 @@
 <body>
   
 <div class="row">
+
   <div class="column">
-    <div class="card">
-      <div class="card">
+    <div class="outerCard">
+      <div class="innerCard">
       <h2>Who is Superboy Prime? </h2>
       <p>The only REAL hero in the DC universe, and the BEST version of Superboy, just ask that pretender Conner Kent</p>
     </div>
     </div>
   </div>
 
-
   <div class="column">
-    <div class="card">
-      <div class="card">
+    <div class="outerCard">
+      <div class="innerCard">
       <div class="container">
         <h2> Who's your favorite Character? </h2>
         <p><input id="question" type="text"  size="65" placeholder="Enter Name"name="Name" value=""/></p>
-        <button class="otherButtons" onclick="findMovie();" type="randomMovie" id="randomButton" >What Superboy Prime thinks of that:  </button>  
+        <button class="otherButtons" onclick="findQoute();" type="randomQoute" id="randomButton" >What Superboy Prime thinks of that choice:</button>  
        <h2>
-          <label for="Recommendation"></label><input "randomMovie" type="text" id="randomMovie" placeholder="Answer" disabled></h2>
+          <label for="Recommendation"></label><input "randomQoute" type="text" id="randomQoute" placeholder="Superboy Prime's opinion" disabled></h2>
         </div>
       </div>
     </div>
   </div>
 
   <div class="column">
-    <div class="card">
-      <div class="card">
+    <div class="outerCard">
+      <div class="innerCard">
         <h2>Contact or Follow Superboy Prime</h2>
         <h3>
           <!-- Add font awesome icons -->
@@ -70,20 +69,38 @@
        </div>
     </div>
   </div>
+
   <div class="column">
-    <div class="card">
-      <div class="card">
-        <h2>Prime Facts</h2>
-          <ol>
-            <li>* </li>
-            <li>* </li>
-            <li>* </li>
-            <li>* </li>
-            <li>* </li>
-          </ol>
+    <div class="outerCard">
+      <div class="innerCard">
+        <h1> Join Us, It's Free! </h1>
+
+  <form class="signup" name="RegForm"  
+        onsubmit="return formValidation()" method="post"> 
+      <p>User Name <input id="platypusName" type="text" 
+                      size="65" name="Name" value=""/></p> 
+    
+      <p>Favorite Character <input type="text" 
+                         size="65" name="Favorite" /></p> 
+    
+      <p>E-mail Address <input type="text" 
+                             size="65" name="EMail" /></p> 
+    
+      <p>Password <input type="text" 
+                          size="65" name="Password" /></p> 
+    
+      <p>Confirm Password <input type="text" 
+                           size="65" name="ConfirmPassword" /></p> 
+
+         <p> <button class="otherButtons" type="submit" 
+                 value="Join Us" name="Submit"></button> 
+      </p> 
+ </form> 
       </div>
     </div>
   
+</div>
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
