@@ -18,6 +18,7 @@ body {
   float: left;
   width: 25%;
   padding: 0 10px;
+  background-color: darkblue;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -37,14 +38,14 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: blue;
+  background-color: darkred;
 }
 
 .innerCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: red;
+  background-color: grey;
 }
 
   

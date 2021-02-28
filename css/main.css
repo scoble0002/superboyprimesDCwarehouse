@@ -7,25 +7,9 @@
 
   
   /*-----------------------------------top 10 movie list--------------------------------------*/
-  
-    ol {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      max-width: 300px;
-      margin: 10px auto;
-      padding: 10px 20px;    
-      border-radius: 8px;
-    }
-    
-    
-    ol li {
-      color: black;
-      text-align: left;
-      padding: 14px 16px;
-    }
-      
-  
+
+
+
 /*--------------------------------------got rid of white space above navbar--------------*/
   .platypusHeader {
     margin: 0;
@@ -39,7 +23,7 @@
     width: 100%;
     background-color: rgb(48, 44, 44);
     color: white;
-    text-align: right;
+    text-align: center;
   }
 
   button {
