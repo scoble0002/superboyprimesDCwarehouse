@@ -85,7 +85,7 @@
   }
   
   p {
-    color: red;
+    color: black;
     max-width: 1000px;
     margin: 10px auto;
     padding: 10px 50px;
@@ -219,11 +219,15 @@
   }
 
 
+  /*---------------footer contacts---------*/
+
+ul#contact li {
+  display:inline;
+}
+
  /*contact page icons*/
  .fa {
-  padding: 20px;
-  font-size: 3000px;
-  width: 100px;
+
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
