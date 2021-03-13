@@ -5,7 +5,7 @@
         let context = document.getElementById('puzzle').getContext('2d');
         
         let img = new Image();
-        img.src = 'https://images.wallpapersden.com/image/download/batman-detective-comics-dc-comics_ZmVoZ2eUmZqaraWkpJRpbWWtaW1l.jpg';
+        img.src = 'https://comicvine1.cbsistatic.com/uploads/square_medium/11112/111122896/4808563-superboy_prime__byjorel__by_robertdarksentry-d99zy17.png';
         img.addEventListener('load', drawTiles, false);
         
         let boardSize = document.getElementById('puzzle').width;
@@ -103,3 +103,4 @@
           }
           solved = flag;
         }
+        
