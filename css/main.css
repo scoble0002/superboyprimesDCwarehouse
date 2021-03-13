@@ -11,23 +11,8 @@
     margin: 0;
   }
   
-  /*---------------------------------------footer--------------------------*/
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(48, 44, 44);
-    color: white;
-    text-align: center;
-  }
 
-  button {
-    color: red;
-    background-color: silver;
-  }
-  
-  
+
   body {
     font-family: 'Nunito', sans-serif;
     color: black;
@@ -37,11 +22,6 @@
     margin:0;
   }
 
-.card {
-  color: black;
-  background-color: black;
-
-}
 
   main {
     flex: 1 0 auto; 
@@ -53,6 +33,19 @@
   }
   
   
+  
+  p {
+    text-align: center;    
+    color: black;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 10px 50px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+
+  
   h1 {
     margin: 0 0 30px 0;
     text-align: center;
@@ -63,26 +56,18 @@
     border-radius: 8px;
     color: black;
   }
-  
-  p {
-    color: black;
-    max-width: 1000px;
-    margin: 10px auto;
-    padding: 10px 50px;
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  h2 {
-    margin: 0 0 30px 0;
-    text-align: center;
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: white;
-    border-radius: 8px;
-    color: red;
-  }
+
+
+h2 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  max-width: 100%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: white;
+}
+
 
   h6{
     margin: 0 0 30px 0;
@@ -93,18 +78,13 @@
     background: white;
     border-radius: 8px;
   }
-  
-  p2 {
-    color: orange;
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
-    background: black;
-    border-radius: 8px;
-    text-align: center;
-  }
 
-  /*-------------------------------------Forms & buttons Index & Become a Platypus pages----------------------*/
+  
+
+
+ 
+
+  /*-------------------------------------Form----------------------*/
   
   form {
     max-width: 300px;
@@ -117,7 +97,7 @@
     border-color: red;
   }
   
-    /*-------------------------------------Buttons Index & Become a Platypus pages----------------------*/
+    /*-------------------------------------Buttons----------------------*/
   
 
     .otherButtons {
@@ -136,13 +116,13 @@
       margin-bottom: 10px;
     }
   
-  /*--------------------------input fields Random & Signup---------------------*/
+
+    /*--------------------------input fields Signup---------------------*/
 
   input[type="text"],
   input[type="password"],
   input[type="email"],
   input[type="favorite"],
-  input[type="randomMovie"],
   textarea, 
   select {
     background: white;
@@ -161,51 +141,125 @@
   }
   
   
-  select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-  }
   
 
 
-  .signup {
-    background-color: silver;
-    color: black;
-    max-width: 300px;
-  }
-    
-    
-    
-    .centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 100%;
-      width: 100%;
-      transform: translate(-50%, -50%);
-      font-size: 300%;
-      color: limegreen;
+
+/*---------------------------------------------------------------------position the character sort buttons----------------------------*/
+.allBtn{
+  text-align: center;
+}
+
+        
+/*-----------------sort comics by character-----------*/       
+
+.filterDiv {
+float: left;
+background-color: black;
+color: #ffffff;
+width: 300px;
+height: 400px;  
+line-height: 100px;
+text-align: center;
+margin: 10px;
+
+display: none;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+padding: 16px;
+text-align: center;
+}
+
+
+
+
+
+.show {
+display: block;
+}
+
+
+.container {
+margin-top: 20px;
+overflow: hidden;
+}
+
+
+
+
+
+
+    /*----------------------------------- Style the buttons -----------------------------------*/
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
     }
     
-    /*---------------------------signup form----------------------*/
-    @media screen and (min-width: 500px) {
-    .signup {
-      background-color: blue;
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    .btn.active {
+      background-color: silver;      
+      color: red;
+    }
+    
+    .btnContainer {
+      background-color: white;
       color: black;
-      max-width: 500px;
+      width: 100%;
+      line-height: 100px;
+      margin: 2px;
+      text-align: center;
     }
+    
+
+/*------------------------link colors-------------------------*/
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+
+}
+
+
+/*-------------------footer------------------*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(48, 44, 44);
+  color: white;
+  text-align: right;
   
-  }
+}
 
-
-  /*---------------footer contacts---------*/
+/*---------------footer contacts---------*/
 
 ul#contact li {
   display:inline;
 }
 
- /*contact page icons*/
+ /*contact icons*/
  .fa {
 
   text-align: center;
@@ -238,25 +292,171 @@ ul#contact li {
     color: white;
   }
 
-  /*--------------------Dark Mode-------------------------*/
+  /* index*/
 
   
-  body.dark-mode {
-    background-color: black;
-    color: white;
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/*------------------------------------------columns----------------------------------*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  background-color: darkblue;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+  /* Media Queries  */
+
+/* small devices */
+@media only screen and (max-width: 300px) {
+  h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  max-width: 100px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: white;
+  border-radius: 8px;
+  font-size: 5px;
+  }
+}
+
+
+
+
+/* -------------------------------------medium devices  */
+
+@media only screen and (min-width: 900px) {
+  h1 {
+      margin: 0 0 30px 0;
+      text-align: center;
+      max-width: 100%;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background: white;
+      border-radius: 8px;
+      font-size: 10px;
+      color: black;
+  }
   }
   
-/* Style the counter cards */
-.outerCard.dark-mode {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: black;
+@media only screen and (min-width: 900px) {
+      h2 {
+          margin: 0 0 30px 0;
+          text-align: center;
+          max-width: 100%;
+          margin: 10px auto;
+          padding: 10px 20px;
+          border-radius: 8px;
+          background: white;
+  }
 }
 
-.innerCard.dark-mode {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: black;
+
+/*---------------------------------------- large devices  */
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+      margin: 0 0 30px 0;
+      text-align: center;
+      max-width: 100%;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background: white;
+      border-radius: 8px;
+      font-size: 10px;
+      color: black;
+  }
+  }
+  
+@media only screen and (min-width: 1200px) {
+      h2 {
+          margin: 0 0 30px 0;
+          text-align: center;
+          max-width: 100%;
+          margin: 10px auto;
+          padding: 10px 20px;
+          border-radius: 8px;
+          background: white;
+  }
 }
+
+ 
+
+      /*-------------------------------------------------- Responsive columns ----------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+        /*----------------------------------- Responsive layout  stacks the columns----------------------------------- */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+
+
+/*----------------------------------------attempts to keep tiles centered=---------------------------*/ 
+        @media screen and (max-width: 1000px) {        
+.filterDiv {
+  margin-right: 50px;
+  }
+}  
+
+  @media screen and (max-width: 800px) {        
+    .filterDiv {
+      margin-right: 25px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {        
+      .filterDiv {
+        margin-right: 5px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .filterDiv {
+          margin-right: 20%;
+          }
+        }
+  
+            /*---------------------------signup form----------------------*/
+    @media screen and (min-width: 500px) {
+    .signup {
+      background-color: blue;
+      color: black;
+      max-width: 500px;
+    }
+  
+  }
