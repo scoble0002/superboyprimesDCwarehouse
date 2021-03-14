@@ -5,7 +5,6 @@
   }
 
 
-
 /*--------------------------------------got rid of white space above navbar--------------*/
   .platypusHeader {
     margin: 0;
@@ -103,7 +102,7 @@ h2 {
 
     .otherButtons {
       padding: 19px 39px 18px 39px;
-      color: red;
+      color: blanchedalmond;
       background-color: silver;
       font-size: 18px;
       text-align: center;
