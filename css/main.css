@@ -133,7 +133,7 @@ h2 {
     outline: 0;
     padding: 15px;
     width: 100%;
-    background-color: #e8eeef;
+    background-color: white;
     color: black;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
@@ -404,12 +404,6 @@ body {
 }
 
 
-        /*----------------------------------- Responsive layout  stacks the columns----------------------------------- */
-        @media screen and (max-width: 600px) {
-          .column {
-            width: 100%;
-          }
-        }
         @media screen and (max-width: 1500px) {
           .column {
             width: 100%;
@@ -444,7 +438,7 @@ body {
             /*---------------------------signup form----------------------*/
             @media screen and (min-width: 500px) {
               .signup {
-                background-color: white;
+                background-color: silver;
                 color: black;
                 max-width: 500px;
               }
