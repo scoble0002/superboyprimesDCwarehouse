@@ -75,7 +75,8 @@ h2 {
     max-width: 100%;
     margin: 10px auto;
     padding: 10px 20px;
-    background: white;
+    color:white;
+    background: #343a40!important;
     border-radius: 8px;
   }
 
@@ -411,7 +412,11 @@ body {
             width: 100%;
           }
         }
-
+        @media screen and (max-width: 1500px) {
+          .column {
+            width: 100%;
+          }
+        }
 
 /*----------------------------------------attempts to keep tiles centered=---------------------------*/ 
         @media screen and (max-width: 1000px) {        
