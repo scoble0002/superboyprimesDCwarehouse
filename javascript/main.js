@@ -76,7 +76,7 @@ function formValidation() {
         } 
   
         let x = 
-           document.getElementById("platypusName").value
+           document.getElementById("userName").value
         window.alert("Congratulations " + x + " you are now one of us!")
         return true; 
     } 

@@ -12,9 +12,6 @@
 </head>
 
 <header>
-
- 
-
   <nav class="navbar navbar-expand-md bg-dark navbar-dark">
     <img id="myimage" style="width:10%;height:10%;margin-right:20px";> 
     <a class="navbar-brand" href="#">Superboy Prime's DC Warehouse</a>
@@ -29,18 +26,15 @@
   </nav>
 </header>  
 
-
-
 <body  onload="randomImage()">
 
-  
 <div class="row">
-
   <div class="column">
+       <div class="grandOpen"> 
         <h2>Superboy Prime's Dc Warehouse </br> 1234 Smallville, Kansas. </br> Earth Prime</h2>
         <h2>Grand Opening in:</h2>
         <h2 id="countdown"></h2>
-  
+      </div>
   </div>
 
 
@@ -69,7 +63,7 @@
   <form class="signup" name="RegForm"  
         onsubmit="return formValidation()" method="post"> 
 
-      <p>User Name <input id="platypusName" type="text" size="65" name="Name" value="" title="Please Enter Name"/></p> 
+      <p>User Name <input id="userName" type="text" size="65" name="Name" value="" title="Please Enter Name"/></p> 
     
       <p>Favorite Character <input id="favChar"  type="text"  size="65" name="Favorite" title="Enter Favorite Character" /></p> 
     
@@ -79,7 +73,7 @@
 
       <p>Confirm Password <input type="text" size="65" name="ConfirmPassword" /></p> 
                            
-      <p> <button class="otherButtons" type="submit" value="Join Us" name="Submit" ></button></p>
+      <p> <button class="otherButtons" type="submit" value="Join Us" name="Submit" >Sign Up</button></p>
 
  </form> 
 
