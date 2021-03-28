@@ -6,15 +6,23 @@
 
 
 
+
+
+  
 /*----------------------basic styling--------------*/
 
+
   body {
+    background-image: url('https://img.fireden.net/co/image/1608/78/1608782321220.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position-y: 5%;
     font-family: 'Nunito', sans-serif;
     color: black;
     display: flex;
     flex-direction: column; 
     height: 50vh; 
-    margin:0;
+    margin:0;   
   }
 
 
@@ -25,13 +33,14 @@
   
   div {
     text-align: center;
+    
   }
   
   
   
   p {
     text-align: center;    
-    color: black;
+    color: white;
     max-width: 1000px;
     margin: 10px auto;
     padding: 10px 50px;
@@ -47,9 +56,9 @@
     max-width: 100%;
     margin: 10px auto;
     padding: 10px 20px;
-    background: white;
+    background-color: transparent;
     border-radius: 8px;
-    color: black;
+    color: white;
   }
 
 
@@ -60,7 +69,8 @@ h2 {
   margin: 10px auto;
   padding: 10px 20px;
   border-radius: 8px;
-  background: white;
+  background-color: transparent;
+  color: white;
 }
 
 
@@ -73,6 +83,14 @@ h2 {
     color:white;
     background: #343a40!important;
     border-radius: 8px;
+  }
+
+  .puzzle{
+    background-color: white;
+    height: 480px;
+    width: 480px;
+    margin-left: auto ;
+    margin-right: auto ;
   }
 
   
@@ -94,6 +112,7 @@ h2 {
     margin-bottom: 50px;
     border: solid;
     border-color: red;
+    color: black;
   }
   
     /*-------------------------------------Buttons----------------------*/
@@ -117,6 +136,12 @@ h2 {
   
 
     /*--------------------------input fields Signup---------------------*/
+
+    .signup {
+      color: black;
+      max-width: 500px;
+      background: rgba(68, 118, 138, 0.3) /*background with 30% opacity */
+    }
 
   input[type="text"],
   input[type="password"],
@@ -177,6 +202,7 @@ display: block;
 .container {
 margin-top: 20px;
 overflow: hidden;
+background-color: transparent;
 }
 
 
@@ -185,26 +211,31 @@ overflow: hidden;
 
 
     /*----------------------------------- Style the buttons -----------------------------------*/
-    .btn {
+    .sbtn {
       border: none;
       outline: none;
       padding: 12px 16px;
-      background-color: silver;
+      background-color: transparent;
       cursor: pointer;
+      color: white;
     }
     
-    .btn:hover {
-      background-color: #ddd;
+    .sbtn:hover {
+      background-color: silver;
+      border-radius: 25px;
+  
+
     }
-    
+
     .btn.active {
       background-color: silver;      
       color: black;
+      border-radius: 25px;
     }
     
     .btnContainer {
-      background-color: white;
-      color: black;
+      background-color: transparent;
+      color: white;
       width: 100%;
      /* line-height: 100px;*/
       margin: 2px;
@@ -300,7 +331,7 @@ body {
   float: left;
   width: 33%;
   padding: 0 10px;
-  background-color: white;
+  background-color: transparent;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -325,7 +356,7 @@ body {
   max-width: 100px;
   margin: 10px auto;
   padding: 10px 20px;
-  background: white;
+  background-color: transparent;
   border-radius: 8px;
   font-size: 5px;
   }
@@ -343,10 +374,10 @@ body {
       max-width: 100%;
       margin: 10px auto;
       padding: 10px 20px;
-      background: white;
+      background-color: transparent;
       border-radius: 8px;
       font-size: 10px;
-      color: black;
+      color: white;
   }
   }
 
@@ -359,7 +390,7 @@ body {
           margin: 10px auto;
           padding: 10px 20px;
           border-radius: 8px;
-          background: white;
+          background-color: transparent;
   }
 }
 
@@ -373,10 +404,10 @@ body {
       max-width: 100%;
       margin: 10px auto;
       padding: 10px 20px;
-      background: white;
+      background-color: transparent;
       border-radius: 8px;
       font-size: 10px;
-      color: black;
+      color: white;
   }
   }
   
@@ -388,11 +419,13 @@ body {
           margin: 10px auto;
           padding: 10px 20px;
           border-radius: 8px;
-          background: white;
+          background-color: transparent;
   }
 }
 
- 
+
+
+
 
       /*-------------------------------------------------- Responsive columns ----------------------------------------------------------*/
 @media screen and (max-width: 600px) {
@@ -402,7 +435,6 @@ body {
     margin-bottom: 20px;
   }
 }
-
 
         @media screen and (max-width: 1500px) {
           .column {
@@ -434,14 +466,4 @@ body {
           margin-right: 20%;
           }
         }
-  
-            /*---------------------------signup form----------------------*/
-            @media screen and (min-width: 500px) {
-              .signup {
-                background-color: silver;
-                color: black;
-                max-width: 500px;
-              }
-            
-            }
-          
+   
