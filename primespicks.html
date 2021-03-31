@@ -1,139 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <link rel="stylesheet" href="css/normalize.css">
-          <link rel="stylesheet" href="css/main.css">
-          
-    
-
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<header>
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <img id="myimage" style="width:10%;height:10%;margin-right:20px";> 
-    <a class="navbar-brand" href="#">Superboy Prime's DC Warehouse</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="primespicks.html">Prime's Picks</a></li> 
-      </ul> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <img id="myimage" style="width:10%;height:10%;margin-right:20px";> 
+      <a class="navbar-brand" href="#">Superboy Prime's DC Warehouse</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar"> 
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="primespicks.html">Prime's Picks</a></li> 
+        </ul> 
+      </div>
+      <h3>Home of the only REAL hero in the DC universe, and the BEST version of Superboy, </br> just ask that pretender Conner Kent</h3>
+    </nav>
+  </header>       
+  <body  onload="randomImage()">      
+    <h1>What are Prime's Picks? </h1><p>Superboy Prime, the foremost expert on DC comics, has created a list of his favorite DC comics of all time. Want to have your voice heard? Go somewhere else, this is Superboy Prime's list.</a></p>
+    <div class="allBtn"><button class="btn active" onclick="filterSelection('all')"> Show all </button>
     </div>
-    <h3>Home of the only REAL hero in the DC universe, and the BEST version of Superboy, </br> just ask that pretender Conner Kent</h3>
-  </nav>
-</header>  
-   
-          
-<body  onload="randomImage()">
-       
-            <h1>What are Prime's Picks? </h1><p>Superboy Prime, the foremost expert on DC comics, has created a list of his favorite DC comics of all time. Want to have your voice heard? Go somewhere else, this is Superboy Prime's list.</a></p>
-           
-          <div class="allBtn"><button class="btn active" onclick="filterSelection('all')"> Show all </button>
-          </div>
-            <div class="btnContainer" id="mybtnContainer">
-              <div><button class="sbtn" onclick="filterSelection('Batman')">Batman</button>
-                  <button class="sbtn" onclick="filterSelection('Wonder Woman')"> Wonder Woman</button>
-                  <button class="sbtn" onclick="filterSelection('Superboy Prime')">Superboy Prime</button>
-                  <button class="sbtn" onclick="filterSelection('Superman')"> Superman</button>
-                  <button class="sbtn" onclick="filterSelection('Flash')">Flash</button>
-                  <button class="sbtn" onclick="filterSelection('Aquaman')">Aquaman</button>
-                  <button class="sbtn" onclick="filterSelection('Titans')">Titans</button>
-                  <button class="sbtn" onclick="filterSelection('Harley Quinn')">Harley Quinn</button>
-                  <button class="sbtn" onclick="filterSelection('Green Arrow')">Green Arrow</button>
-                  <button class="sbtn" onclick="filterSelection('Swamp Thing')">Swamp Thing</button>
-                  <button class="sbtn" onclick="filterSelection('Supergirl')">Supergirl</button>
-                  <button class="sbtn" onclick="filterSelection('Green Lantern Corps')">Green Lantern Corps</button>
-          </div>
-          <div class="container">
-            <div class="filterDiv Superboy Prime"><img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Infinite_Crisis_%28collection%29.png" alt="Infinite Crisis" style="width:100%;height:100%;"></a></div>
-  
-            <div class="filterDiv Titans" ><img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Teen_Titans_The_Judas_Contract.jpg" alt="The Judas Contract" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Wonder Woman"><img src="https://upload.wikimedia.org/wikipedia/en/5/5c/Wonder_Woman_Earth_One.jpg" alt="Earth one" style="width:100%;height:100%;"></a></div>
-  
-            <div class="filterDiv Flash" ><img src="https://upload.wikimedia.org/wikipedia/en/f/fa/Flashpoint_%28DC_Comics%29.png" alt="flashpoint" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Green Lantern Corps"><img src="https://upload.wikimedia.org/wikipedia/en/8/88/Blackest_Night_%28Absolute_edition%29.jpg" alt="Blackest Night" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Aquaman" ><img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Aquaman17_%281996%29.jpg" alt="Up from the depths" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Superman"><img src="https://upload.wikimedia.org/wikipedia/en/0/02/Superman423.jpg" alt="whatever happened to the man of tomorrow" style="width:100%;height:100%;"></a></div>
-            
-            <div class="filterDiv Batman" ><img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Detective_Comics_27_%28May_1939%29.png" alt="Debut" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Swamp Thing" ><img src="https://upload.wikimedia.org/wikipedia/en/5/59/Swthing01.jpg" alt="first issue" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Green Arrow"><img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Green_lantern_76.JPG" alt="Green Arrow and Green Lantern" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Harley Quinn" ><img src="https://upload.wikimedia.org/wikipedia/en/0/04/Gotham_City_Sirens_Vol_1_1.png" alt="Gotham City Sirens" style="width:100%;height:100%;"></a></div>
-
-
-            <div class="filterDiv Superboy Prime"><img src="https://upload.wikimedia.org/wikipedia/en/a/ab/Final_Crisis_Legion_of_3_Worlds_%28collection%29.png" alt="Infinite Crisis" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Titans" ><img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Titanstomorrow.jpg" alt="Titans Tomorrow" style="width:100%;height:100%;"></a></div>
-            
-            <div class="filterDiv Wonder Woman"><img src="https://upload.wikimedia.org/wikipedia/en/5/52/Wonder_woman_02.jpg" alt="Wonder Woman Volume 2" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Flash" ><img src="https://upload.wikimedia.org/wikipedia/en/1/17/The_Flash_Rebirth_%28hardcover_collection%29.jpg" alt="Flash Rebirth" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Green Lantern Corps"><img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Green_Lantern-Rebirth_%28collection%29.png" alt="GL Rebirth" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Aquaman" ><img src="https://upload.wikimedia.org/wikipedia/en/3/36/AdventureComics443_%281976%29.jpg" alt="Adventure Comics 443" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Superman"><img src="https://upload.wikimedia.org/wikipedia/en/6/69/Birthright01cover.jpg" alt="Birthright" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Batman" ><img src="https://upload.wikimedia.org/wikipedia/en/c/c1/Batman497.png" alt="Knightfall" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Swamp Thing" ><img src="https://upload.wikimedia.org/wikipedia/en/4/41/HouseOfSecrets92.jpg" alt="House of Secrets" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Green Arrow"><img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Green_Arrow_The_Longbow_Hunters.jpg" alt="THe Longbow Hunters" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Harley Quinn" ><img src="https://upload.wikimedia.org/wikipedia/en/0/05/Harley_Quinn_%28Dr._Harleen_Quinzel_circa_2016%29.png" alt="Harley Quinn 1" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Supergirl"><img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Superman123.jpg" alt="Girl of Steel" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Supergirl"><img src="https://upload.wikimedia.org/wikipedia/en/1/17/Action_Comics_285.png" alt="debut" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Supergirl"><img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Crisis_on_Infinite_Earths_issue_1_cover.jpg" alt="Crisis on Infinite Earths" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Superboy Prime"><img src="https://upload.wikimedia.org/wikipedia/en/8/84/TotSC_Superman_Prime_cover.jpg" alt="Sinestro Corps War" style="width:100%;height:100%;"></a></div>
-  
-            <div class="filterDiv Titans" ><img src="https://upload.wikimedia.org/wikipedia/en/5/53/Teen_titans_01_1966.jpg" alt="Titans number 1" style="width:100%;height:100%;"></a></div>
-    
-            <div class="filterDiv Wonder Woman"><img src="https://upload.wikimedia.org/wikipedia/en/d/dd/Wonder_Woman_Circle.jpg" alt="the Circle" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Flash" ><img src="https://upload.wikimedia.org/wikipedia/en/4/49/Flash_Comics_%28Jan._1940%29-1.jpg" alt="Flash debut" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Green Lantern Corps"><img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Sinestro_Corps_Cover.jpg" alt="Sinestro Corp War" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Aquaman" ><img src="https://upload.wikimedia.org/wikipedia/en/5/50/The_Atlantis_Chronicles_1.jpg" alt="The Atlantis Chronicles" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Superman"><img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Superman75.jpg" alt="Death of Superman" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Batman" ><img src="https://upload.wikimedia.org/wikipedia/en/7/77/Dark_knight_returns.jpg" alt="The Dark Knight Retuns" style="width:100%;height:100%;"></a></div>
-            
-            <div class="filterDiv Swamp Thing" ><img src="https://upload.wikimedia.org/wikipedia/en/7/72/Swampthingmoore21.jpg" alt="Saga of Swamp Thing" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Green Arrow"><img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Green_Arrow_v3_01.jpg" alt="Quiver" style="width:100%;height:100%;"></a></div>
-
-            <div class="filterDiv Harley Quinn" ><img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Harley_Quinn_and_Joker.png" alt="Batman Harley Quinn" style="width:100%;height:100%;"></a></div>
-          </div>
+     <div class="btnContainer" id="mybtnContainer">
+        <div><button class="sbtn" onclick="filterSelection('Batman')">Batman</button>
+          <button class="sbtn" onclick="filterSelection('Wonder Woman')"> Wonder Woman</button>
+          <button class="sbtn" onclick="filterSelection('Superboy Prime')">Superboy Prime</button>
+          <button class="sbtn" onclick="filterSelection('Superman')"> Superman</button>
+          <button class="sbtn" onclick="filterSelection('Flash')">Flash</button>
+          <button class="sbtn" onclick="filterSelection('Aquaman')">Aquaman</button>
+          <button class="sbtn" onclick="filterSelection('Titans')">Titans</button>
+          <button class="sbtn" onclick="filterSelection('Harley Quinn')">Harley Quinn</button>
+          <button class="sbtn" onclick="filterSelection('Green Arrow')">Green Arrow</button>
+          <button class="sbtn" onclick="filterSelection('Swamp Thing')">Swamp Thing</button>
+          <button class="sbtn" onclick="filterSelection('Supergirl')">Supergirl</button>
+          <button class="sbtn" onclick="filterSelection('Green Lantern Corps')">Green Lantern Corps</button>
         </div>
-
-
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   <script src="javascript\main.js"></script>
-   <script src="javascript\randomImage.js"></script>
-
-
+      <div class="container">
+        <div class="filterDiv Superboy Prime"><img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Infinite_Crisis_%28collection%29.png" alt="Infinite Crisis" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Titans" ><img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Teen_Titans_The_Judas_Contract.jpg" alt="The Judas Contract" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Wonder Woman"><img src="https://upload.wikimedia.org/wikipedia/en/5/5c/Wonder_Woman_Earth_One.jpg" alt="Earth one" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Flash" ><img src="https://upload.wikimedia.org/wikipedia/en/f/fa/Flashpoint_%28DC_Comics%29.png" alt="flashpoint" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Green Lantern Corps"><img src="https://upload.wikimedia.org/wikipedia/en/8/88/Blackest_Night_%28Absolute_edition%29.jpg" alt="Blackest Night" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Aquaman" ><img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Aquaman17_%281996%29.jpg" alt="Up from the depths" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Superman"><img src="https://upload.wikimedia.org/wikipedia/en/0/02/Superman423.jpg" alt="whatever happened to the man of tomorrow" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Batman" ><img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Detective_Comics_27_%28May_1939%29.png" alt="Debut" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Swamp Thing" ><img src="https://upload.wikimedia.org/wikipedia/en/5/59/Swthing01.jpg" alt="first issue" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Green Arrow"><img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Green_lantern_76.JPG" alt="Green Arrow and Green Lantern" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Harley Quinn" ><img src="https://upload.wikimedia.org/wikipedia/en/0/04/Gotham_City_Sirens_Vol_1_1.png" alt="Gotham City Sirens" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Superboy Prime"><img src="https://upload.wikimedia.org/wikipedia/en/a/ab/Final_Crisis_Legion_of_3_Worlds_%28collection%29.png" alt="Infinite Crisis" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Titans" ><img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Titanstomorrow.jpg" alt="Titans Tomorrow" style="width:100%;height:100%;"></a></div>    
+        <div class="filterDiv Wonder Woman"><img src="https://upload.wikimedia.org/wikipedia/en/5/52/Wonder_woman_02.jpg" alt="Wonder Woman Volume 2" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Flash" ><img src="https://upload.wikimedia.org/wikipedia/en/1/17/The_Flash_Rebirth_%28hardcover_collection%29.jpg" alt="Flash Rebirth" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Green Lantern Corps"><img src="https://upload.wikimedia.org/wikipedia/en/b/b0/Green_Lantern-Rebirth_%28collection%29.png" alt="GL Rebirth" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Aquaman" ><img src="https://upload.wikimedia.org/wikipedia/en/3/36/AdventureComics443_%281976%29.jpg" alt="Adventure Comics 443" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Superman"><img src="https://upload.wikimedia.org/wikipedia/en/6/69/Birthright01cover.jpg" alt="Birthright" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Batman" ><img src="https://upload.wikimedia.org/wikipedia/en/c/c1/Batman497.png" alt="Knightfall" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Swamp Thing" ><img src="https://upload.wikimedia.org/wikipedia/en/4/41/HouseOfSecrets92.jpg" alt="House of Secrets" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Green Arrow"><img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Green_Arrow_The_Longbow_Hunters.jpg" alt="THe Longbow Hunters" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Harley Quinn" ><img src="https://upload.wikimedia.org/wikipedia/en/0/05/Harley_Quinn_%28Dr._Harleen_Quinzel_circa_2016%29.png" alt="Harley Quinn 1" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Supergirl"><img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Superman123.jpg" alt="Girl of Steel" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Supergirl"><img src="https://upload.wikimedia.org/wikipedia/en/1/17/Action_Comics_285.png" alt="debut" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Supergirl"><img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Crisis_on_Infinite_Earths_issue_1_cover.jpg" alt="Crisis on Infinite Earths" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Superboy Prime"><img src="https://upload.wikimedia.org/wikipedia/en/8/84/TotSC_Superman_Prime_cover.jpg" alt="Sinestro Corps War" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Titans" ><img src="https://upload.wikimedia.org/wikipedia/en/5/53/Teen_titans_01_1966.jpg" alt="Titans number 1" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Wonder Woman"><img src="https://upload.wikimedia.org/wikipedia/en/d/dd/Wonder_Woman_Circle.jpg" alt="the Circle" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Flash" ><img src="https://upload.wikimedia.org/wikipedia/en/4/49/Flash_Comics_%28Jan._1940%29-1.jpg" alt="Flash debut" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Green Lantern Corps"><img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Sinestro_Corps_Cover.jpg" alt="Sinestro Corp War" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Aquaman" ><img src="https://upload.wikimedia.org/wikipedia/en/5/50/The_Atlantis_Chronicles_1.jpg" alt="The Atlantis Chronicles" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Superman"><img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Superman75.jpg" alt="Death of Superman" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Batman" ><img src="https://upload.wikimedia.org/wikipedia/en/7/77/Dark_knight_returns.jpg" alt="The Dark Knight Retuns" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Swamp Thing" ><img src="https://upload.wikimedia.org/wikipedia/en/7/72/Swampthingmoore21.jpg" alt="Saga of Swamp Thing" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Green Arrow"><img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Green_Arrow_v3_01.jpg" alt="Quiver" style="width:100%;height:100%;"></a></div>
+        <div class="filterDiv Harley Quinn" ><img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Harley_Quinn_and_Joker.png" alt="Batman Harley Quinn" style="width:100%;height:100%;"></a></div>
+      </div>  
+     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascript\main.js"></script>
+    <script src="javascript\randomImage.js"></script>
   </body>
-
-
   <footer class="footer">
     <ul id="contact">
       <li>Contact or follow us on: </li>
@@ -142,10 +93,7 @@
       <li>|<a href="https://twitter.com" class="fa fa-twitter"></a></li>
       <li>|<a href="https://www.youtube.com" class="fa fa-youtube"></a></li>
       <li>|<a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
-      
-      <li>|    &#169 2021 SBP Media &nbsp;
-      </li>
-
+       <li>|    &#169 2021 SBP Media &nbsp;</li>
     </ul>
   </footer>
 </html> 
