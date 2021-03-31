@@ -1,32 +1,4 @@
 
-
-//----------------dark mode------------------//
-
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-
-
-
-
-//---------------random button---------------//
-
-            
-function findQoute() {
-  if (question.value == "Superboy Prime") {
-    let Qoute = ["Awesome!", "Great choice", ,];
-    let random = Math.floor(Math.random() * (Qoute.length - 1));
-    document.getElementById("randomQoute").setAttribute("value", Qoute[random]);
-  }
-  if (question.value != "Superboy Prime") {
-    let Qoute = ["Wrong answer", "Why do I even bother with you people?", "THAT GUY?", "REALLY?", "I don't even know who that is", "Didn't I beat him up?", ,];
-    let random = Math.floor(Math.random() * (Qoute.length - 1));
-    document.getElementById("randomQoute").setAttribute("value", Qoute[random]);
-}
-}
-
-
 //----------------sign up form-------------------//
 
 function formValidation() { 
