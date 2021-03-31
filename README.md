@@ -12,7 +12,7 @@
 - Retrieve Data: I use AJAX and Font Awesome to retrieve and diplay the social media logos for the contact us links.
 - Create an Array and display a value: I created an array of images that uses math random to display one of two images in the navbar, on load.
 - Create an Array and display a value: I created a sliding piece picture puzzle using a multidiminsional array to take an image and break it into tiles that are then positioned with x/y coordinates.
-- Create a function that accepts two values and does a calculaton: puzzle.js has functions setBoard(), drawTiles(),distance, slideTile and checkSolved() that meet this requirement.
+- Create a function that accepts two values and does a calculaton: puzzle.js has functions setupBoard(), drawTiles(),position, slideTile and solvedPuzzle() that meet this requirement.
 - Create a function that accepts two values and does a calculaton: main.js has filterSelection(), pfiaddClass(), and pfiremoveClass() that meet this requirement.
 - Create a function that accepts two values and does a calculaton: randomImage.js randomImage() also meets this requirement.
 - Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format: The signup form does this for both the email and password field.

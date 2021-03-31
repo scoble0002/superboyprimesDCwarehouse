@@ -24,21 +24,21 @@
         let solved = false;
         
         let boardParts;
-        setBoard();
+        setupBoard();
         
         //---------------difficulty---------------//
         
         document.getElementById('scale').onchange = function() {
           tileCount = this.value;
           tileSize = boardSize / tileCount;
-          setBoard();
+          setupBoard();
           drawTiles();
         };
         
         document.getElementById('puzzle').onclick = function(e) {
           tileLocation.x = Math.floor((e.pageX - this.offsetLeft) / tileSize);
           tileLocation.y = Math.floor((e.pageY - this.offsetTop) / tileSize);
-          if (distance(tileLocation.x, tileLocation.y, tileEmpty.x, tileEmpty.y) == 1) {
+          if (position(tileLocation.x, tileLocation.y, tileEmpty.x, tileEmpty.y) == 1) {
             slideTile(tileEmpty, tileLocation);
             drawTiles();
           }
@@ -47,7 +47,7 @@
           }
         };
         
-        function setBoard() {
+        function setupBoard() {
           boardParts = new Array(tileCount);
           for (let i = 0; i < tileCount; ++i) {
             boardParts[i] = new Array(tileCount);
@@ -76,7 +76,7 @@
           }
         }
         
-        function distance(x1, y1, x2, y2) {
+        function position(x1, y1, x2, y2) {
           return Math.abs(x1 - x2) + Math.abs(y1 - y2);
         }
         
@@ -88,11 +88,11 @@
             boardParts[fromLoc.x][fromLoc.y].y = tileCount - 1;
             toLoc.x = fromLoc.x;
             toLoc.y = fromLoc.y;
-            checkSolved();
+            solvedPuzzle();
           }
         }
         
-        function checkSolved() {
+        function solvedPuzzle() {
           let flag = true;
           for (let i = 0; i < tileCount; ++i) {
             for (let j = 0; j < tileCount; ++j) {
