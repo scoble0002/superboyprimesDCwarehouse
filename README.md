@@ -2,11 +2,11 @@
 ## My project is a homepage for fictional DC comics villian Superboy Prime.
 ## My goals were: 
 - To meet the project requirements  
-- To design a website that reflected the personality of my client (Superboy Prime). 
-- My personal goal was to push my Javascript past anything I did with my Front-end project. 
+- To design a website that reflected the personality of my (fictional) client (Superboy Prime). 
+- My personal goal was to push my Javascript further then I did with my Front-end project. 
 
 ### Requirements
-- Github: My project is on Github and has 28 commits.
+- Github: My project is on Github and has 28 or more commits.
 - Responsive design: I use media queries to change my layout.
 - Responsive design: My Navbar is a bootstrap navbar that collapses ino a hamburger menu.
 - Retrieve Data: I use AJAX and Font Awesome to retrieve and diplay the social media logos for the contact us links.
