@@ -47,6 +47,9 @@
           }
         };
         
+
+/*-------------- board setup, intial x y positions -----------*/
+
         function setupBoard() {
           boardParts = new Array(tileCount);
           for (let i = 0; i < tileCount; ++i) {
@@ -80,6 +83,9 @@
           return Math.abs(x1 - x2) + Math.abs(y1 - y2);
         }
         
+/*---------------------swaps positions for selected tile and empty tile------------*/
+
+
         function slideTile(toLoc, fromLoc) {
           if (!solved) {
             boardParts[toLoc.x][toLoc.y].x = boardParts[fromLoc.x][fromLoc.y].x;
@@ -90,7 +96,9 @@
             toLoc.y = fromLoc.y;
             solvedPuzzle();
           }
-        }
+        
+        
+        /*-------------checks to see if move solved the puzzle--------------*/
         
         function solvedPuzzle() {
           let flag = true;
