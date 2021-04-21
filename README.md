@@ -16,7 +16,7 @@
 - Create a function that accepts two values and does a calculaton: main.js has filterSelection(), pfiaddClass(), and pfiremoveClass() that meet this requirement.
 - Create a function that accepts two values and does a calculaton: randomImage.js randomImage() also meets this requirement.
 - Implement a regular expression (regex) to ensure a field either a phone number or an email address is always stored and displayed in the same format: The signup form does this for both the email and password field.
-- Calculate and display data based on an external factor: I have a countdown to the Grand Openning of the physical srore on the index page.
+- Calculate and display data based on an external factor: I have a countdown to the Grand Openning of the physical store on the index page.
 
 ## INSTRUCTIONS
 1. You should be able to download all files in the main branch and run this site without any special steps.
